@@ -1,0 +1,78 @@
+const producto= '                  Monitor de 20 pulgadas         ';
+console.log(producto);
+console.log(producto.length);
+
+//Eliminar espacios del inicio
+console.log(producto.trimStart() );
+
+//Eliminar espacios al final
+console.log(producto.trimEnd() );
+
+//Eliminar espacios al inicio y final
+console.log(producto.trimStart().trimEnd() );
+
+//Eliminar espacios al inicio y final forma anterior
+console.log(producto.trim() );
+
+
+#################     REPLACE     #################
+
+//Remplazar .replace
+
+const producto= 'Monitor de 20 pulgadas';
+console.log(producto.replace('pulgadas',' " '));
+console.log(producto.replace('Monitor','Monitor Curvo'));
+
+
+#################     SLICE     #################
+
+//Extraer o cortar una cadena de texto .slice
+console.log(producto.slice(0,10) );
+console.log(producto.slice(8) );
+
+//Alternativa a slice
+console.log(producto.substring(0,10) );
+console.log(producto.substring(2,1) );
+
+const usuario = 'Juan';
+console.log(usuario.substring(0,1));
+//Alternativa para la primera letra
+console.log(usuario.charAt(0));
+
+#################     REPEAT     #################
+
+const producto= 'Monitor de 20 pulgadas';
+//.repeat va a permitir repetir una cadena de texto
+const texto= 'en promocion'.repeat(3);
+
+console.log(texto);
+console.log(`${producto} ${texto} !!!`);
+
+
+#################     SPLIT     #################
+
+// .split, dividir un string
+const actividad = "Estoy aprendiendo JavaScript Moderno";
+console.log(actividad.split(" "));
+
+const hobbies = "Leer, Caminar, escuchar musica,escibir,aprender a programar";
+console.log(hobbies.split(", "));
+
+
+#################     toUpperCase     #################
+//Convertir textos a Mayusculas
+const producto= 'Monitor de 20 pulgadas';
+console.log(producto.toUpperCase());
+
+
+#################     toLowerCase     #################
+//Convertir textos a Minusculas
+console.log(producto.toLowerCase());
+
+const email = "CORREO@CORREO.COM";
+console.log(email.toLowerCase());
+
+
+const precio = 300;
+console.log(precio);
+console.log(precio.toString());
