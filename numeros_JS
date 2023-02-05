@@ -75,3 +75,52 @@ resultado = Math.max(3,5,1,12,-3);
 resultado = Math.floor(Math.random() * 30);
 
 console.log(resultado);
+
+
+#################     ORDEN DE LAS OPERACIONES     #################
+
+let resultado;
+//SE RELIZAN LAS OPERACIONES COMO REGLAS MATEMATICAS
+resultado = 20 + 30 * 2;
+resultado = (20 + 30) * 2;
+
+// 20% de descuento en tu carrito de compras
+resultado = (20 + 30 + 40 + 50 + 60) * .2;
+
+resultado = (20 + 30 ) * 1.16;
+
+console.log(resultado);
+
+#################     INCREMENTO Y DECREMENTO     #################
+
+//ESTOS EJERCICIOS SE REALIZAN EN LA CONSOLA
+
+let puntaje = 5; ENTER
+puntaje++; ENTER
+puntaje; enter //Mostrara el numero 6
+//Si quieres no volver a escribir la variable y dar enter se tiene que escribir de la siguiente forma:
+++puntaje;
+puntaje; enter //Mostrara el numero 7
+
+puntaje += 3;//esto nos sirve para aumentar una cantidad en especifico.
+
+#################     CONVERTIR STRING A NUMEROS     #################
+
+const numero1 = "20";
+const numero2 = "20.2";
+const numero3 = "Uno";
+const numero4 = 20;
+
+//console.log( typeof numero1);
+//console.log(Number);
+console.log(Number.parseInt(numero1));
+console.log(Number.parseFloat(numero2));
+
+//Revisar si un numero es entero o no
+console.log(Number.isInteger(numero4));
+console.log(Number.isInteger(numero3));
+
+console.log(numero1);
+
+
+
