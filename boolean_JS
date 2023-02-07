@@ -1,1 +1,35 @@
+const boolean1 = true;
+const boolean2 = false;
+const boolean2 = "true";
 
+console.log(boolean1);
+console.log(boolean2);
+
+console.log(typeof boolean1);
+
+
+const boolean4 = new Boolean(true);
+console.log(boolean4);
+
+
+############     Comparacion boolean     ############
+
+const boolean1 = true;
+const boolean2 = false;
+
+console.log(boolean1 === boolean2);
+
+console.log(boolean1 === true);
+
+############     Buenas Practicas para evaliar boolean     ############
+
+const autenticado = true;
+
+if(autenticado){
+    console.log('si puede ver Netflix');
+  }else{
+    console.log('NO puedo ver Netflix');
+  }
+  
+//TERNARIO
+console.log(autenticado ? 'Si esta autenticado' : 'No esta autenticado');
