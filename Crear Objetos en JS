@@ -1,0 +1,44 @@
+############     CREAR OBJETOS     ############
+
+const nombre = "Monitor de 20 pulgadas";
+const precio =300;
+constante disponible =true;
+
+//UN OBJETO AGRUPA TODO EN UNA SOLA VARIABLE
+
+//CONOCIDO COMO OBJECT LITERAL
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+console.log(producto);
+
+
+############     ACCEDER A LOS VALORES DE UN OBJETO     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+console.log(producto.nombre);
+console.log(producto.precio);
+console.log(producto.disponible);
+
+//SEGUNDA FORMA DE ACCEDER
+console.log(producto['nombre']);
+
+
+############     AGREGAR MAS PROPIEDADES A UN OBJETO     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+console.log(producto.nombre);
