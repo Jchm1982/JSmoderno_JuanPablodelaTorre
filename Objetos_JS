@@ -1,0 +1,251 @@
+############     CREAR OBJETOS     ############
+
+const nombre = "Monitor de 20 pulgadas";
+const precio =300;
+constante disponible =true;
+
+//UN OBJETO AGRUPA TODO EN UNA SOLA VARIABLE
+
+//CONOCIDO COMO OBJECT LITERAL
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+console.log(producto);
+
+
+############     ACCEDER A LOS VALORES DE UN OBJETO     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+console.log(producto.nombre);
+console.log(producto.precio);
+console.log(producto.disponible);
+
+//SEGUNDA FORMA DE ACCEDER
+console.log(producto['nombre']);
+
+
+############     AGREGAR MAS PROPIEDADES A UN OBJETO     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+//Agregar nuevas propiedades al objeto
+producto.imagen = "imagen.jpg";
+
+//Eliminar propiedades de un objeto
+delete producto.diponible;
+
+console.log(producto.nombre);
+
+
+############     ACCEDER A LOS VALORES DE UN OBJETO Y ASIGNARLO A UNA VARIABLE     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+//FORMA ANTERIOR
+//const productivo = producto.nombre;
+//console.log(producto.nombre);
+//console.log(productivo);
+
+//FORMA ACTUAL Destructuring
+const { nombre,precio, disponible }= producto;
+//const { precio }= producto;
+console.log(nombre);
+console.log(precio);
+
+############     AGREGAR OBJETOS DENTRO DE UN OBJETO     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true,
+    informacion:{
+        medidas:{
+            peso:'1 Kg',
+            medida:'1m'
+          },
+          fabricacion:{
+            pais:'China'
+          }
+    }
+  }
+  
+  console.log(producto);
+  //console.log(producto.informacion);
+  //console.log(producto.informacion.peso);
+  
+  
+############     Destructuring EN OBJETOS ANIDADOS     ############  
+  
+  const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true,
+    informacion:{
+        medidas:{
+            peso:'1 Kg',
+            medida:'1m'
+          },
+          fabricacion:{
+            pais:'China'
+          }
+    }
+  }
+  
+  const { nombre,informacion : { fabricaacion } } = producto;
+  console.log(nombre);
+  console.log(informacion);
+  
+
+
+############     DETALLE CON LOS OBJETOS     ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+producto.disponible = false;
+
+console.log(producto);
+
+############     METODOS PARA LOS OBJETOS     ############
+
+//Para que no se puedan modificar los objetos, se debe habilitar el modo estricto
+"use strict";
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+//EL OBJETO NO SE PUEDA EDITAR
+Object.freeze( producto );
+
+
+producto.disponible = false;
+producto imagen = "imagen.jpg";
+
+console.log(producto);
+
+//SABER SI EL OBJETO ESTA CONGELADO O NO 
+console.log(Object.isFrozen(producto));
+
+
+############     SELLAR UN OBJETO      ############
+
+//SI PERMITE MODIFICAR LAS LLAVES DE UN OBJETO
+"use strict";
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+//SE ESTA SELLANDO EL OBJETO
+Object.seal( producto );
+
+
+producto.disponible = false;
+producto imagen = "imagen.jpg";
+
+
+console.log(producto);
+
+//SABER SI EL OBJETO ESTA SELLADO O NO 
+console.log(Object.isSealed(producto));
+
+
+############     UNIR DOS OBJETOS OBJETO      ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true
+  }
+
+const medidas = {
+    peso: '1 Kg',
+    medida: '1 m'
+}
+
+
+console.log(producto);
+console.log(medidas);
+
+const resultado = Object.assign(producto,medidas);
+
+//SPREAD OPERATOR o REST OPERATOR
+const resultado2 = { ...producto, ...medidas }
+
+console.log(resultado);
+console.log(resultado2);
+
+############     PALABRA THIS EN OBJETO      ############
+
+//SIRVE PARA BUSCAR LA PROPIEDAD DENTRO DEL MISMO OBJETO
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true,
+    mostrarInfo: fucntion(){
+        console.log(`El producto:${this.nombre} tiene un precio de:${this.precio}`)
+    }
+  }
+
+producto.mostrarInfo();
+
+
+############     CREAR OBJETOS CON OBJECT CONSTRUCTOR      ############
+//OBJECT LITERAL
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true,
+  }
+  
+//OBJECT CONSTRUCTOR
+
+fucntion Producto(nombre,precio){
+    this.nombre = nombre;
+    this.precio = precio;
+    this.disponible = true;
+}
+
+const producto2 = new Producto('Monitor 24 pulgadas', 500);
+console.log(producto2);
+
+
+############    METODOS PARA OBJETOS .keys, .values y .entries      ############
+
+const producto = {
+    nombre:"Monitor de 20 pulgadas",
+    precio:300,
+    disponible =true,
+  }
+
+console.log( Object.keys( producto ) );
+
+console.log( Object.values( producto ) );
+
+console.log( Object.entries( producto ) 
