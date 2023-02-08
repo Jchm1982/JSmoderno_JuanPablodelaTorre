@@ -1,1 +1,151 @@
+############    CREACION DE UN ARREGLO    ############
 
+const numeros = [ 10,20,30 ];
+
+const meses = new Array ('Enero','Febrero','Marzo');
+
+console.log(numeros);
+console.log(meses);
+
+//ARreglo que contiene datos de todo tipo
+const deTodo = ["Hola",10,true,"si",null,{nombre:'Juan', trabajo:'Desarrollo'}];
+console.log(deTodo);
+
+
+############    ACCEDER A LOS ELEMENTOS DE UN ARREGLO    ############
+
+const numeros = [10.20.30.40.50];
+
+console.log(numeros);
+console.table(numeros);
+
+//ACCEDER AL ARREGLO
+console.log(numeros[2]);
+console.log(numeros[0]);
+
+############    RECORRER UN ARREGLO    ############
+
+const meses = ['Enero','Febrero', 'Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre'];
+console.table(meses);
+
+//CUANTO MIDE EL ARREGLO
+console.log(meses.length);
+
+//RECORRER CON UN FOR
+for( let i =0 ; i < meses.legth ; i++){
+    console.log(meses[i]);
+}
+
+############    AGREGAR NUEVOS VALORES A UN ARREGLO    ############
+const meses = ['Enero','Febrero', 'Marzo','Abril','Mayo','Junio','Julio','Agosto','Septiembre'];
+
+meses[9]='Ultimo Mes';
+//meses[10]='Ultimo Mes';
+
+console.table(meses);
+
+
+############    AGREGAR NUEVOS VALORES A UN ARREGLO AL INICIO Y AL FIN (IMPERATIVA)    ############
+const meses = ['Enero','Febrero', 'Marzo','Abril','Mayo'];
+
+//AGREGAR AL FINAL DEL ARREGLO
+meses.push('Abril');
+meses.push('Mayo');
+
+console.table(meses);
+
+
+const carrito = [];
+
+//DEFINIR UN PRODUCTO
+const producto = {
+  nombre: "Monitor de 32 pulgadas",
+  precio:500
+}
+
+const producto2 = {
+  nombre: "Celular",
+  precio:300
+}
+
+carrito.push(producto);
+carrito.push(producto2);
+
+const producto3 = {
+  nombre: "teclado",
+  precio:150
+}
+
+carrito.unshift(producto3);
+
+console.table(producto);
+
+
+############    FORMA DECLARATIVA UTILIZANDO SPREAD OPERATOR   ############
+
+
+const carrito = [];
+
+const producto = {
+  nombre: "Monitor de 32 pulgadas",
+  precio:500
+}
+
+const producto2 = {
+  nombre: "Celular",
+  precio:300
+}
+
+
+const producto3 = {
+  nombre: "teclado",
+  precio:150
+}
+
+let resultado;
+resultado = [...carrito,producto];
+resultado = [...resultado,producto2];
+resultado = [producto3, ...resultado];
+
+console.table(resultado);
+
+############    ELIMINAR ELEMENTOS DE UN ARREGLO SPLICE   ############
+
+const carrito = [];
+
+const producto = {
+  nombre: "Monitor de 32 pulgadas",
+  precio:500
+}
+
+const producto2 = {
+  nombre: "Celular",
+  precio:300
+}
+
+carrito.push(producto);
+carrito.push(producto2);
+
+const producto3 = {
+  nombre: "teclado",
+  precio:150
+}
+
+const producto4 = {
+  nombre: "teclado",
+  precio:150
+}
+carrito.push(producto4);
+
+carrito.unshift(producto3);
+
+console.table(producto);
+
+//ELIMINAR ULTIMO ELEMENTO DE UN ARREGLO..
+producto.pop();
+
+console.table(producto);
+
+//ELIMINAR INICIO DE UN ARREGLO..
+producto.shift();
+console.table(producto);
