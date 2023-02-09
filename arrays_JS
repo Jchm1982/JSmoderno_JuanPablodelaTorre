@@ -149,3 +149,71 @@ console.table(producto);
 //ELIMINAR INICIO DE UN ARREGLO..
 producto.shift();
 console.table(producto);
+
+
+producto.splice(1,1);
+console.table(producto);
+
+############    DESTRUCTURING EN ARREGLOs   ############
+
+//DESTRUCTURING OBJETOS
+const producto ={
+    nombre: "Monitor 20 pulgadas",
+    precio: 300,
+    disponible: true
+  }   
+ 
+//DESTRUCTURING 
+const { nombre} = producto;
+console.log(nombre);
+
+//DESTRUCTURING EN ARREGLOS
+const numeros = [10,20,30,40,50];
+
+//const [primero,segundo,tercero]=numeros;
+//const [ , ,tercero]=numeros;
+const [ primero, segundo,...tercero]=numeros;
+console.log(tercero);
+
+
+############    FOREACH ARREGLOS   ############
+
+const carrito =[
+    { nombre: 'Monitor 25 pulgadas',precio: 500},
+    { nombre: 'Television',precio: 100},
+    { nombre: 'Tablet',precio: 200},
+    { nombre: 'Audifonos',precio: 300},
+    { nombre: 'Celular',precio: 700},               
+];
+
+for( let i = 0; i< carrito.length ; i++ ){
+    console.log(`${carrito[i].nombre - Precio:${carrito[i].precio}}`);
+}
+
+carrito.forEach( function(producto){
+        console.log(`${producto.nombre - Precio:${producto.precio}}`);
+});
+
+############    MAP PARA ITERAR UN ARREGLO   ############
+
+
+
+const carrito =[
+    { nombre: 'Monitor 25 pulgadas',precio: 500},
+    { nombre: 'Television',precio: 100},
+    { nombre: 'Tablet',precio: 200},
+    { nombre: 'Audifonos',precio: 300},
+    { nombre: 'Celular',precio: 700},               
+];
+
+//MAP LLENA UNA VARIABLE CON UN ARREGLO NUEVO
+const nuevoArreglo = carrito.map( function(producto){
+        return `${producto.nombre - Precio:${producto.precio}}`;
+});
+
+const nuevoArreglo2 = carrito.forEach( function(producto){
+        return `${producto.nombre - Precio:${producto.precio}}`;
+});
+
+console.log(nuevoArreglo);
+console.log(nuevoArreglo2);
