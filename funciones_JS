@@ -1,0 +1,41 @@
+###############     FUNCIONES     ###############
+
+//DECLARACION DE LA FUNCION
+
+function sumar() {
+  //CUERPO DE LA FUNCION
+  console.log(2 + 2);
+}
+
+//LLAMADO DE LA FUNCION
+
+sumar();
+sumar();
+sumar();
+
+//EXPRESION DE FUNCION 
+
+const sumar2 = function (){
+  console.log( 3 + 3);
+}
+
+sumar2();
+
+
+###############     DIFERENCIAS  ENTRE FUNCION EXPRESSION Y DECLARATION     ###############
+
+//DECLARACION DE FUNCION 
+sumar();
+function sumar() {
+  console.log(2 + 2);
+}
+
+
+//EXPRESION DE FUNCION 
+
+sumar2();
+const sumar2 = function (){
+  console.log( 3 + 3);
+}
+
+###############     FUNCIONES NATIVAS DE JS     ###############
