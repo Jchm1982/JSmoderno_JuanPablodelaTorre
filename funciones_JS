@@ -39,3 +39,102 @@ const sumar2 = function (){
 }
 
 ###############     FUNCIONES NATIVAS DE JS     ###############
+//alert('Hubo un error');
+
+//prompt ('Cual es tu edad?');
+
+console.log(parseInte('20'));
+
+###############     DIFERENCIA ENTRE FUNCIONES Y METODOS     ###############
+
+const numero1 = 20;
+const numero2 = "20";
+
+console.log( parseInte(numero2) ); //ESTO ES UNA FUNCION
+console.log( numero1.toString) ); //ESTO ES UN METODO
+
+function sumar () {
+  console.log( 2 + 2);
+}
+
+sumar();
+
+###############     PARAMETROS Y ARGUMENTOS     ###############
+
+//a y b SON PARAMETROS DE FUNCION
+function sumar (a,b) {
+  console.log( a + b );
+}
+
+sumar(2,3); //2 y 3 SON ARGUMENTOS
+sumar(200,184);
+
+function saludar (nombre,apellido){
+  console.log(`Hola ${nombre} ${apellido}`);
+}
+
+saludar('Juan C','Hernandez');
+
+###############     PARAMETROS POR DEFAULT     ###############
+
+function saludar (nombre='Desconocido',apellido=''){
+  console.log(`Hola ${nombre} ${apellido}`);
+}
+
+saludar('Juan C','Hernandez');
+
+
+###############     COMO SE COMUNICAN LAS FUNCIONES ENTRE SI     ###############
+
+iniciarApp();
+
+
+function iniciarApp(){
+  console.log('Iniciando App...');
+  
+  segundaFuncion();
+}
+
+function segundaFuncion(){
+    console.log('Desde la segunda funcion');
+    
+    usuarioAutenticado('Juan C');
+}
+
+function usuarioAutenticado(usuario){
+  console.log('Usuario Autenticado... espere...');
+  console.log(`Usuario Autenticado correctamente:${usuario}`);
+}
+
+###############     FUNCIONES QUE RETORNAN VALORES     ###############
+
+function sumar(a,b){
+  //console.log( a + b );
+  return a + b;
+}
+
+const resultado = sumar(2,3);
+console.log(resultado);
+
+//EJEMPLO MAS AVANZADO
+
+let total = 0;
+
+function agergarCarrito(precio){
+  return total += precio;
+}
+
+function calcularImpuesto(total){
+  return total * 1.15;
+}
+
+total = agregarCarrito(300);
+total = agregarCarrito(100);
+total = agregarCarrito(600);
+
+const totalPagar = calcularImpuesto(total);
+
+//console.log(total);
+console.log(`El total a pagar es de ${totalPagar}`);
+
+###############     AÑADIR FUNCIONES EN UN OBJETO     ###############
