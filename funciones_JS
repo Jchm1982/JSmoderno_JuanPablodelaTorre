@@ -138,3 +138,114 @@ const totalPagar = calcularImpuesto(total);
 console.log(`El total a pagar es de ${totalPagar}`);
 
 ###############     AÑADIR FUNCIONES EN UN OBJETO     ###############
+
+const reproductor = {
+//SE LES CONOCE COMO METODOS DE PROPIEDAD
+  reproducir: function(id){
+    console.log(`Reproduciendo Canción con el id: ${id}`);
+  },
+  pausar: function(){
+    console.log('Pausado ...');
+  }
+  borrar = function (id){
+  console.log(`Borrando Cancion... ${id}`);
+  },
+  crearPlaylist: function(nombre){
+    console.log(`Creando la Play List de ${nombre}`);
+  },
+  reproducirPlayList: function(nombre){
+      console.log(`Reproduciendo la Play List de ${nombre}`);
+  }
+}
+
+reproductor.reproducir(30);
+reproductor.reproducir(20);
+reproductor.pausar();
+reproductor.borrar(30);
+reproductor.crearPlaylist('Ska');
+reproductor.crearPlaylist('Rock Urbano');
+reproductor.reproducirPlayList('Toloache pa mi negra');
+
+/*
+reproductor.borrar = function (id){
+  console.log(`Borrando Cancion... ${id}`);
+}
+
+reproductor.borrar(30);
+*/
+
+###############     ARROW FUNCTION - FUNCIONES DE FLECHA     ###############
+
+//SE AGREGA DESDE ES6
+const aprendiendo = function(){
+  console-log('Aprendiendo JavaScript');
+}
+
+const aprendiendo2 = () => 'Aprendiendo JavaScript';
+
+aprendiendo();
+aprendiendo2();
+
+
+###############     VENTAJAS ARROW FUNCTION     ###############
+
+const aprendiendo = function(tecnologia , tecnologia2){
+  console-log(`Aprendiendo ${tecnologia}  y ${tecnologia2}`);
+}
+aprendiendo('JavaScript', 'Node.js');
+
+
+//const aprendiendo2 = (tecnologia) => `Aprendiendo ${tecnologia}`;
+const aprendiendo2 = (tecnologia , tecnologia2) => `Aprendiendo ${tecnologia}  y ${tecnologia2}`;
+
+console.log(aprendiendo2('JavaScript'));
+
+###############     Arrow Functions en un forEach y un map     ###############
+
+const carrito = [
+  {nombre:'Monitor 20 pulgadas',precio: 500},
+  {nombre:'Television',precio: 100},
+  {nombre:'Tablet',precio:200 },
+  {nombre:'Audifonos',precio:300 },
+  {nombre:'Teclado',precio:400 },
+  {nombre:'Celular',precio:700 }
+];
+
+const nuevoArreglo = carrito.map( producto => `${producto.nombre} - Precio: ${producto.precio}` );
+carrito.forEach( producto => console.log (`${producto.nombre} - Precio: ${producto.precio}`) ); 
+
+console.log(nuevoArreglo);
+
+
+
+
+###############     Arrow Functions en el Reproductor de Música     ###############
+
+const reproductor = {
+  cancion:'',
+  reproducir: id => console.log(`Reproduciendo Canción con el id: ${id}`),
+  pausar: () => console.log('Pausado ...'),
+  borrar = id => console.log(`Borrando Cancion... ${id}`),
+  crearPlaylist: nombre => console.log(`Creando la Play List de ${nombre}`),
+  reproducirPlayList: nombre => console.log(`Reproduciendo la Play List de ${nombre}`),
+  
+  set NuevaCancion(cancion){
+    this.cancion = cancion;
+    console.log(`Añadiendo ${cancion}`);
+  },
+  
+  get obtenerCancion(){
+    console.log(`${this.cancion}`);
+  }
+}
+reproductor.NuevaCancion = 'Enter Sadman';
+reproductor.obtenerCancion;
+
+
+reproductor.reproducir(30);
+reproductor.reproducir(20);
+reproductor.pausar();
+reproductor.borrar(30);
+reproductor.crearPlaylist('Ska');
+reproductor.crearPlaylist('Rock Urbano');
+reproductor.reproducirPlayList('Toloache pa mi negra');
