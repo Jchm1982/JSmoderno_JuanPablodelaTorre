@@ -31,5 +31,6 @@ if(autenticado){
     console.log('NO puedo ver Netflix');
   }
   
+  
 //TERNARIO
 console.log(autenticado ? 'Si esta autenticado' : 'No esta autenticado');
