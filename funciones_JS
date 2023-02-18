@@ -217,8 +217,6 @@ carrito.forEach( producto => console.log (`${producto.nombre} - Precio: ${produc
 console.log(nuevoArreglo);
 
 
-
-
 ###############     Arrow Functions en el Reproductor de Música     ###############
 
 const reproductor = {
