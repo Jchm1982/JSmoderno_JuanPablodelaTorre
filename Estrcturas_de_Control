@@ -111,6 +111,7 @@ if(efectivo > totalPagar || credito > totalPagar || disponible > totalPagar){
   console.log('Fondos Insuficientes');
 }
 
+
 ###################     OPERADOR TERNARIO      ###################
 
 const auteticado = true;
