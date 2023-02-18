@@ -67,3 +67,53 @@ if( dinero > totalApagar ){
 }ç
 
 ###################     SWITCH PARA EVALUAR MULTIPLES CONDICIONES      ###################
+
+//SWITCH CASE
+
+const metodoPago = 'efectivo';
+
+switch(metodoPago){
+  case 'efectivo':
+    console.log(`Pagaste con ${metodoPago}`);
+    break;
+  case 'cheque':
+    console.log(`Pagaste con ${metodoPago}`);
+    break;
+  case 'tarjeta':
+    console.log(`Pagaste con ${metodoPago}`);
+    break;
+  default:
+    console.log(`Aun no has seleccionado un metodo de pago o no soportado`);
+    break;
+}
+
+###################     OPERADOR &&      ###################
+
+const usuario = 'true';
+const puedePagar = 'true';
+
+if(usuario $$ puedePagar){
+  console.log('Si Puedes comprar..');
+}else{
+  console.log('NO puede somprar');
+}
+
+###################     OPERADOR OR      ###################
+
+const efectivo = 300;
+const credito = 1000;
+const disponible = efectivo + credito;
+const totalPagar = 600;
+
+if(efectivo > totalPagar || credito > totalPagar || disponible > totalPagar){
+  console.log('SI podemos pagar');
+}else{
+  console.log('Fondos Insuficientes');
+}
+
+###################     OPERADOR TERNARIO      ###################
+
+const auteticado = true;
+const puedePagar = false;
+
+console.log( auteticado && puedePagar ? 'Si esta autenticado' : 'NO esta autenticado');
