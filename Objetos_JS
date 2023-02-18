@@ -215,7 +215,6 @@ const producto = {
 
 producto.mostrarInfo();
 
-
 ############     CREAR OBJETOS CON OBJECT CONSTRUCTOR      ############
 //OBJECT LITERAL
 const producto = {
