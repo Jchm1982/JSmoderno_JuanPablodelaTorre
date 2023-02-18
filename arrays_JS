@@ -197,7 +197,6 @@ carrito.forEach( function(producto){
 ############    MAP PARA ITERAR UN ARREGLO   ############
 
 
-
 const carrito =[
     { nombre: 'Monitor 25 pulgadas',precio: 500},
     { nombre: 'Television',precio: 100},
