@@ -6,7 +6,6 @@ console.log(numero);
 
 //console.log(typeof numero);
 
-
 #################     UNDEFINED     #################
 
 let numero2= null;
