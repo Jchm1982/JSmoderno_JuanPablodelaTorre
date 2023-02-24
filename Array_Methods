@@ -1,0 +1,88 @@
+##################    .SOME     ##################
+
+const meses = ['Enereo','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+]
+
+//Comprobar si un valor exite en un arreglo
+meses.forEach(mes => {
+  if(mes==='Enero'){
+    console.log('Enero si existe')
+  }
+
+})
+
+const resultado = meses.includes('Enero');//.includes solo servira en un arreglo basado en un indice
+console.log(resultado);//true
+
+//EN un arreglo de objetos se utiiza .some
+
+const existe = carrito.some( producto => {
+  return producto.nombre === 'celular'
+} );
+
+console.log(existe);//true
+
+//En un arreglo de Indices
+const existe2= meses.some( mes => mes ==='febrero');
+console.log(existe2);//true
+
+##################    .findindex     ##################
+
+const meses = ['Enereo','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+]
+
+//FORMA MANUAL
+meses.forEach( (mes,i) => {
+  if(mes==='Abril'){
+    console.log(`Encontrado en el indice ${i}`)
+  }
+
+})
+
+//Enontrar el indice de ABRIL
+
+const indice = meses.findIndex( mes => mes === 'Abril');
+console.log(indice);
+
+//Encontrar un indice de un arreglo de objetos
+
+const indice2 = carito.findIndex(producto => producto.precio === 100);//SOlo mostrara un solo resultado
+console.log(indice2);
+
+##################    .reduce     ##################
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+]
+
+//CON foreach
+let total = 0;
+carrito.forEach(producto => total += producto.precio);
+console.log(total);
+
+//Con reduce, se pasan 2 valores, el valor anterior 
+let resultado = carrito.reduce( (total,producto) => total + prodcuto.precio, 0);
+console.log(resultado);
+
+##################    .filter     ##################
