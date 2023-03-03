@@ -86,3 +86,97 @@ let resultado = carrito.reduce( (total,producto) => total + prodcuto.precio, 0);
 console.log(resultado);
 
 ##################    .filter     ##################
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+];
+
+let resultado;
+
+resultado = carrito.filter( producto => producto.precio > 400 );
+resultado = carrito.filter( producto => producto.precio < 600 );
+resultado = carrito.filter( producto => producto.nombre !== 'Audifonos' );
+resultado = carrito.filter( producto => producto.nombre === 'Audifonos' );
+
+
+console.log(resultado);
+
+##################    .find     ##################
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+];
+
+//CON FOREACH
+let resultado = '';
+carrito.forEach((producto,index) => {
+  if(producto.nombre === 'Tablet'){
+    resultado=carrito[index]
+  }
+});
+console.log(resultado);
+
+
+//CON .FIND -> Solo regresa el primer elemento que cumpla la condicion
+
+const resultado2 =carrito.find( producto => producto.nombre === 'Tablet');
+console.log(resultado2);
+
+##################    .every     ##################
+//Se debe de cumplir todas las condiciones como verdadero
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+];
+
+const resultado = carrito.every( producto => producto.precio < 1000);
+console.log(resultado);
+
+##################    .concat     ##################
+const meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+const meses2 = ['Agosto','Septiembre'];
+const meses3 = ['Octubre','Noviembre','Diciembre'];
+
+//.concat
+const resultado = meses.concat(meses2,meses3);
+console.log(resultado);
+
+//spread operator
+const resultado2 = [...meses, ...meses2];
+console.log(resultado2);
+
+##################    spread operator     ##################
+const meses = ['Enero','Febrero','Marzo','Abril','Mayo','Junio','Julio'];
+
+const carrito = [
+  {nombre:'Monitor de 27 Pulgadas', precio:500},
+  {nombre:'Television', precio:100},
+  {nombre:'Tablet', precio:200},
+  {nombre:'Audifonos', precio:300},
+  {nombre:'teclado', precio:180},
+  {nombre:'Celular', precio:900},
+];
+
+const meses2 = [...meses,'Agosto'];
+
+console.log(meses2);
+
+const producto = { nombre:'DiscoDuro',precio:300};
+
+const carrito2 = [...carrito,producto]
+console.log(carrito2);
