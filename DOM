@@ -28,4 +28,72 @@ elemento = document.images;
 elemento = document.scrips;
 console.log(elemento);
 
-######################    getElementsByClassName    ######################
+######################    getElementsByClassName seleccionas el nombre de una clase    ######################
+//Seleccinar elementos por su clase
+const header = document.getElementsByClassName('header');
+console.log(header);
+
+const hero = document.getElementsByClassName('hero');
+console.log(hero);
+
+//si las clases html existen mas de 1 vez
+
+const contenedores =document.getElemntsByClassName('contenedor');
+console.log(contenedores);
+
+//si una clase no existe
+const noExiste =document.getElemntsByClassName('no-existe');
+console.log(noExiste);
+
+######################    getElementsById    ######################
+
+const formulario =document.getElemntById('formulario');
+console.log(noExiste);
+
+const noExiste =document.getElemntById('no-existe');
+console.log(noExiste);
+
+//si las formularios existen mas de 1 vez regresara el primero que encuentre por todos los que son iguales
+
+
+######################    querySelector    ######################
+
+//este regresa solo un elemento el primero que encuentre maximo un elemento
+const card = document.querySelector('.card');
+console.log(card);
+
+//Tener selectores especificos
+const info = document.querySelector('.premium .info');
+console.log(info);
+
+//seleccionar el segundo card de hospedaje
+const segundoCard = document.querySelector('section.hospedaje .card:nth-child(2)');
+console.log(segundoCard);
+
+//tambien puedes seleccionar Id con la misma sintaxis de CSS, si existen 2 solo sera 1
+const formulario = document.querySelector('.contenido-hero #formulario');
+console.log(formulario);
+
+//Seleccionar elementos HTML
+const navegacion = document.querySelector('nav');
+console.log(navegacion);
+
+######################    querySelectorAll    ######################
+//. para las clases
+//# para los Id
+// las etiquetas HTML
+//regresa todos los diferentes elementos que cumplan con la condicion
+
+const card = document.querySelectorAll('.card');
+console.log(card);
+
+const card = document.querySelectorAll('.card');
+console.log(card);
+
+const formularios = document.querySelectorAll('#formulario');
+console.log(formularios);
+
+//si un elemento no existe
+
+const noExiste = document.querySelectorAll('no-existe');
+console.log(noExiste);
