@@ -1,0 +1,31 @@
+Document Object Model
+Acceder a codigo de HTML
+
+######################    DOM    ######################
+
+let elemento;
+//Para seleccionar objetos siempre debemos colocar document
+elemento = document;
+elemento = document.all;
+elemento = document.body;
+elemento = document.domain;
+elemento = document.forms;//cuantos formularios hay 
+
+elemento = document.forms[0];
+elemento = document.forms[0].id;
+elemento = document.forms[0].method;
+elemento = document.forms[0].classList;
+elemento = document.forms[0].action;
+
+elemento = document.links;
+elemento = document.links[4];
+elemento = document.links[4].classList;
+elemento = document.links[4].className;
+
+
+elemento = document.images;
+
+elemento = document.scrips;
+console.log(elemento);
+
+######################    getElementsByClassName    ######################
