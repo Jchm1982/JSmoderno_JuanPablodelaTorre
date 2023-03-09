@@ -97,3 +97,29 @@ console.log(formularios);
 
 const noExiste = document.querySelectorAll('no-existe');
 console.log(noExiste);
+
+
+######################    Modificar textos o imagenes    ######################
+
+
+######################    Cambiando el CSS con JS    ######################
+
+######################    Traversing the DOM    ######################
+
+
+const card =document.querySelector('.card');
+//card.children[1].children[1].textContent = 'Nuevo heading desde traversing the dom';
+
+//card.children[0].src='img/hacer2.jpg';
+//console.log(card.children[0]);
+
+//Traversing de hijo a Padre
+
+//console.log(car.parentNode);
+//console.log(car.parentElement.parentElement.perentElement);
+
+//console.log(card);
+//console.log(card.nextElementSibling);
+//console.log(card.nextElementSibling.nextElementSibling);
+
+const ultimoCard = document.querySelector('.card:nth-chlid(4)');
