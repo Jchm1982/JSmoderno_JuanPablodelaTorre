@@ -122,4 +122,10 @@ const card =document.querySelector('.card');
 //console.log(card.nextElementSibling);
 //console.log(card.nextElementSibling.nextElementSibling);
 
-const ultimoCard = document.querySelector('.card:nth-chlid(4)');
+//const ultimoCard = document.querySelector('.card:nth-chlid(4)');
+//console.log(ultimoCard.previousElementSibling);
+
+const navegacion = document.querySelector('.navegacion');
+
+console.log(navegacion.firsrElementChild);
+console.log(navegacion.lastElementChild);
