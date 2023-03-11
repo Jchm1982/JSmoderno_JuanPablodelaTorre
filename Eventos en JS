@@ -39,9 +39,9 @@ nav.addEventListener('mouseenter',()=>{
 
 const busqueda = document.querySelector('.busqueda');
 
-busqueda.addEventListener('keydown',()=>{
-  console.log('Escribiendo...');
-});
+//busqueda.addEventListener('keydown',()=>{
+//  console.log('Escribiendo...');
+//});
 
 //keyup->Se ejecuta cuando sueltas la tecla
 //blur->Se ejecut a cuano entras al input y sales
@@ -49,3 +49,8 @@ busqueda.addEventListener('keydown',()=>{
 //paste-> Cuando pegas un texto
 //cut-> Cuando lo cortas
 //input->Este evento se ejecuta cuando haces todo lo anterior, menos el blur
+
+//para saber que esta sucediendo en el input
+busqueda.addEventListener('keydown',(e)=>{
+  console.log(e);
+});
