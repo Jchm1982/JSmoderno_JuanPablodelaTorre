@@ -52,5 +52,7 @@ const busqueda = document.querySelector('.busqueda');
 
 //para saber que esta sucediendo en el input
 busqueda.addEventListener('keydown',(e)=>{
-  console.log(e);
+  //console.log(e.type);
+  //console.log(e.target);
+  console.log(e.target.value); //Par asaber que se esta escribiendo
 });
