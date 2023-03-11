@@ -229,8 +229,12 @@ function mostrarOcultarFooter(){
   //console.log('Diste CLick en el boton2');
   if(footer.classList.contains('activo')){
     footer.classList.remove('activo');  
+    this.classList.remove('activo');
+    this.textContents = 'Idioma y Moneda';
   }else{
-    footer.classList.add('activo');  
+    footer.classList.add('activo');
+    this.classList.add('activo');
+    this.textContents = 'X Cerrar';
   }
 
   
