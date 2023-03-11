@@ -1,3 +1,9 @@
 ###################  Detectar cuando un HTML esta listo   ###################
+cosole.log(1);
 
+document.addEventListener('DOMContentLoaded',() =>{
+  //console.log('Documento Listo');
+  cosole.log(2);
+});
 
+cosole.log(3);
