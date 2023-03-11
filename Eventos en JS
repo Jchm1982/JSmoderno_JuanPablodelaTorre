@@ -123,3 +123,22 @@ titulo.addEventListener('click',e=>{
     e.stopPropagation();
     console.log('Click en titulo');
 });
+
+###################  Prevenir el Event Bubbling con Delegation   ###################
+
+const carDiv = document.querySelector('.card');
+
+carDiv.addEventListener('click', e =>{
+    //console.log('Click en Card');
+    //console.log(e.target.classList);
+    if(e.target.classList.contains('titulo')){
+      console.log('Diste clic en titulo');
+    }
+    if(e.target.classList.contains('precio')){
+      console.log('Diste clic en precio');
+    }
+    if(e.target.classList.contains('card')){
+      console.log('Diste clic en card');
+    }
+    
+});
