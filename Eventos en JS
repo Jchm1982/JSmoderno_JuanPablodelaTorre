@@ -33,3 +33,19 @@ nav.addEventListener('mouseenter',()=>{
   console.log('Entrando a la Navgeacion');
   nav.style.backgroundColor = 'white';
 });
+
+
+###################  Eventos sobre los inputs   ###################
+
+const busqueda = document.querySelector('.busqueda');
+
+busqueda.addEventListener('keydown',()=>{
+  console.log('Escribiendo...');
+});
+
+//keyup->Se ejecuta cuando sueltas la tecla
+//blur->Se ejecut a cuano entras al input y sales
+//copy->Cuando haces una opcion de copiado
+//paste-> Cuando pegas un texto
+//cut-> Cuando lo cortas
+//input->Este evento se ejecuta cuando haces todo lo anterior, menos el blur
