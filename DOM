@@ -155,7 +155,20 @@ enlace.href = "/nuevo-enlace";
 enlace.target = "_blank";
 
 console.log(enlace);
+enlace.target="_blank";
+
+enlace.setAttribute('date-enlace','nuevo-enlace');
+
+enlace.classList.add('algna-clase');
+
+enlace.onclick = miFuncion;
 
 //Seleccionar la navegacion
 const navegacion = document.querySeletor('.navegacion');
-navegacion.appendChild(enlace);
+//navegacion.appendChild(enlace);
+//console.log(navegacion.children);
+navegacion.insertBefore(enlace,navegacion.children[1]);
+
+function miFuncion{
+  alert('Diste click');
+}
