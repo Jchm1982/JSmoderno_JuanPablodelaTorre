@@ -144,3 +144,18 @@ console.log(navegacion.children);
 navegacion.removeChild(navegacion.children[2]);
 
 ######################    Generar HTML con JS    ######################
+const enlace = document.createElement('a');
+
+//Agregandole el texto
+enlace.textContent = 'Nuevo Enlace';
+
+//añadiendo href
+enlace.href = "/nuevo-enlace";
+
+enlace.target = "_blank";
+
+console.log(enlace);
+
+//Seleccionar la navegacion
+const navegacion = document.querySeletor('.navegacion');
+navegacion.appendChild(enlace);
