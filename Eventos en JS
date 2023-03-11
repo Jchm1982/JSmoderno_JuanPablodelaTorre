@@ -81,3 +81,21 @@ function validarFormulario(e){
   
   console.log(e.target.action);
 };
+
+
+###################  Eventos que suceden al hacer scroll en el mouse   ###################
+
+window.addEventListener('scroll',()=> {
+  //console.log('Scrolling');
+  //const scrollPX = window.scrollY;
+  
+  //console.log(scrollPX);
+  const premium = document.querySelector(.premium);
+  cont ubicacion = premium.getBoundingClientRect(); //en que lugar se encuentra un elemento
+  //console.log(ubicacion);
+  if(ubicacion.top < 100){
+    console.log('El elemento ya esta visible');
+  }else{
+    console.log('Aun no, da mas scroll');
+  }
+});
