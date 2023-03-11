@@ -207,3 +207,32 @@ card.appendChild(imagen);
 
 //Asignar info
 card.appendChild(info);
+
+//Insertar en el HTML
+const contenedor = document.queryElement('.hacer .contenedor-cards');
+
+contenedor.appendChild(card);
+
+
+######################    Ejemplo avanzado con JavaScript    ######################
+
+const btnFlotante = document.querySelector('.btn-flotante');
+const footer = document.querySelector('.footer');
+
+//btnFlotante.addEventListener('click',() =>{
+//  console.log('Diste CLick en el boton');
+//});
+
+btnFlotante.addEventListener('click',mostrarOcultarFooter);
+
+function mostrarOcultarFooter(){
+  //console.log('Diste CLick en el boton2');
+  if(footer.classList.contains('activo')){
+    footer.classList.remove('activo');  
+  }else{
+    footer.classList.add('activo');  
+  }
+
+  
+  console.log(footer.classList);
+}
