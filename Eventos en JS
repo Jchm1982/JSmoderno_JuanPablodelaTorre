@@ -18,6 +18,10 @@ const nav = document.querySelector('.navegacion');
 //  console.log('Saliendo de la Navgeacion');
 //});
 
+//mousedown -> Es parecido a click
+//mouseup -> Es cuando se suelta el click del mouse
+//dblclick ->Evento doble click
+
 //Registrar un evento
 nav.addEventListener('mouseout',()=>{
   console.log('Saliendo de la Navgeacion');
