@@ -1,0 +1,53 @@
+//Agregar elementos al localstorage
+localStorage.setItem('nombre', 'Juan C');
+//SI en el 2 valor lo colocas un numero lo validara como string
+
+
+//Agregar elementos al sesionstorage
+sessionStorage.setItem('nombre', 'Juan C2');
+
+// Si queremos asignar un objeto se puede hacer de la siguiente forma:
+const producto = {
+  nombre: 'Monitor 24 pulgadas',
+  precio: 300
+}
+
+const productoString = JSON.stringify(producto);
+localStorage.setItem('producto', productoString);
+
+const meses = ['Enero', 'Febrero','Marzo'];
+const mesesString = JSON.stringify(meses);
+localStorage.setItem('meses', mesesString);
+
+
+########### OBTENER DATOS DEL LOCAL STORAGE ###########
+
+
+const nombre = localStorage.getItem('nombre');
+console.log(nombre);
+
+//Si intentas traer un valor que no existe no muestra error solo trae null
+
+const productoJSON = localStorage.getItem('producto');
+console.log(productoJSON); // Se ibtiene como string en la consola
+
+//CONVERTIR UN STRING A UN OBJETO CUANDO TENGA LA FORMA DE UN OBJETO
+console.log(JSON.parse(productoJSON) ):
+
+//CONVERTIR UN STRING A UN ARREGLO CUANDO TENGA LA FORMA DE UN ARREGLO
+const meses = localStorage.getItem('meses');
+const mesesArray = JSON.parse(meses);
+console.log(mesesArray);
+
+
+
+########### ELIMINAR Y ACTUALIZAR DATOS DEL LOCAL STORAGE ###########
+//Eliminar un registro
+localStorage.removeItem('nombre');
+
+//Actualizar un registro
+const mesesArray = JSON.parse( localStorage.getItem('mese') );
+console.log(mesesArray);
+mesesArray.push('Nuevo Mes');
+console.log(mesesArray);
+localStorage.setItem('meses',JSON.stringify( mesesArray ) );
