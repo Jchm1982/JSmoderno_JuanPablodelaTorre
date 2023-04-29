@@ -1,1 +1,17 @@
 
+const diaHoy = new Date();
+
+let valor;
+
+valor  = diaHoy;
+
+valor = diaHoy.getFullYear();//Trae el añoo actual
+valor = diaHoy.getMonth();//Trae el mes actual
+valor = diaHoy.getMinutes();//Trae los minutos
+valor = diaHoy.getHours();//Trae la hora
+valor = diaHoy.getTime();//Trae los milisegundo que han trancurrido desde el 1 de enero de 1970
+
+
+
+
+console.log(valor);
