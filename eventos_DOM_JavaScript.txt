@@ -1,0 +1,172 @@
+Evento:				Ocurre cuando:																				Pertenece a:
+
+abort				Se anula la carga de un medio																UiEvento, 																													Evento
+
+afterprint			Una pagina a comenzado a imprimirse															Evento
+
+animationend		Se ha compeltado una animación CSS															Evento de 																													Animación
+
+animationiteration	Se repite una animación CSS																	Evento de 																													Animación
+
+animationstart		Se ha iniciado una animación CSS															Evento de 																													Animación
+
+beforeprint			Una página está a punto de imprimirse														Evento
+
+beforeunload		Antes de que un documento esté a punto de descargarse										Evento de 																													interfaz de 																												usuario, 																													evento
+
+blur				Un elemento pierde el foco																	Evento de 																													enfoque
+
+canplay				El navegador puede comenzar a reproducir un medio (tiene búfer suficiente para comenzar)	Evento
+
+canplaythrough		El navegador puede reproducir a través de un medio sin detenerse para el almacenamiento 
+					en búfer																					Evento
+
+change				El contenido de un elemento de formulario ha cambiado										Evento
+
+click				Se hace clic en un elemento																	click
+
+contextmenu			Se hace clic con el botón derecho en un elemento para abrir un menú contextual				Evento de 																													ratón
+copy				Se copia el contenido de un elemento														Evento de 																													portapapeles
+
+cut					El contenido de un elemento se corta														Evento de 																													portapapeles
+dblclick			Se hace doble clic en un elemento															Evento de 																													ratón
+
+drag				Se está arrastrando un elemento																Evento de 																													arrastre
+
+dragend				El arrastre de un elemento ha finalizado													Evento de 																													arrastre
+
+dragenter			Un elemento arrastrado entra en el destino de colocación									Evento de 																													arrastre
+
+dragleave			Un elemento arrastrado abandona el destino de colocación									Evento de 																													arrastre
+
+dragover			Un elemento arrastrado está sobre el destino de colocación									Evento de 																													arrastre
+
+dragstart			Se ha iniciado el arrastre de un elemento													Evento de 																													arrastre
+
+drop				Un elemento arrastrado se coloca sobre el destino											Evento de 																													arrastre
+
+durationchange		Se cambia la duración de un medio															Evento
+
+ended				Un medio ha llegado al final ("gracias por escuchar")										Evento
+
+error				Se ha producido un error al cargar un archivo												Evento de 																													progreso, 																													Evento de 																													interfaz de 																												usuario, 																													Evento
+
+focus				Un elemento se enfoca																		Evento de 																													enfoque
+
+focusin				Un elemento está a punto de enfocarse														Evento de 																													enfoque
+
+focusout			Un elemento está a punto de perder el foco													Evento de 																													enfoque
+
+fullscreenchange	Un elemento se muestra en modo de pantalla completa											Evento
+
+fullscreenerror		Un elemento no se puede mostrar en modo de pantalla completa								Evento
+
+hashchange			Se han realizado cambios en la parte de anclaje de una URL									Evento de 																													cambio de 																													hash
+
+input				Se han realizado cambios en la parte de anclaje de una URL									Evento de 																													entrada, 																													Evento
+
+invalid				Un elemento obtiene la entrada del usuario													Evento
+
+keydown				Un elemento no es válido																	Evento de 																													teclado
+
+keypress			Se presiona una tecla																		Evento de 																													teclado
+
+keyup				Se libera cuando suelta la tecla															Evento de 																													teclado
+
+load				Se ha cargado un objeto																		Evento de 																													interfaz de 																												usuario, 																													evento
+
+loadeddata			Se cargan los datos multimedia																Evento
+
+loadedmetadata		Se cargan los metadatos (como las dimensiones y la duración)								Evento
+
+loadstart			El navegador comienza a buscar los medios especificados										Evento de 																													progreso
+
+message				Se recibe un mensaje a través del origen del evento											Evento
+
+mousedown			El botón del ratón se presiona sobre un elemento											Evento de 																													ratón
+
+mouseenter			El puntero se mueve a un elemento															Evento de 																													ratón
+
+mouseleave			El puntero se mueve fuera de un elemento													Evento de 																													ratón
+
+mousemove			El puntero se mueve sobre un elemento														Evento de 																													ratón
+
+mouseover			El puntero se mueve a un elemento															Evento de 																													ratón
+
+mouseout			El puntero se mueve fuera de un elemento													Evento de 																													ratón
+
+mouseup				Un usuario suelta un botón del ratón sobre un elemento										Evento de 																													ratón
+
+mousewheel			Obsoleto Usar el evento de rueda en su lugar												Evento de 																													rueda
+
+offline				El navegador comienza a funcionar sin conexión												Evento
+
+online				El navegador comienza a funcionar en línea													Evento
+
+open				Se abre una conexión con el origen del evento												Evento
+
+pagehide			El usuario navega fuera de una página web													Evento de 																													transición 																													de página
+
+pageshow			El usuario navega a una página web															Evento de 																													transición 																													de página
+
+paste				Parte del contenido se pega en un elemento													Evento de 																													portapapeles
+
+pause				Un medio está en pausa																		Evento
+
+play				El contenido multimedia se ha iniciado o ya no está en pausa								Evento
+
+playing				El contenido multimedia se está reproduciendo después de haber sido pausado o almacenado
+					 en búfer																					Evento
+
+popstate			El historial de la ventana cambia															Evento de 																													estado pop
+
+progress			El navegador está descargando datos multimedia												Evento
+
+ratechange			Se cambia la velocidad de reproducción de un medio											Evento
+
+resize				Se cambia el tamaño de la vista de documento												Evento de 																													interfaz de 																												usuario, 																													evento
+
+reset				Se restablece un formulario																	Evento
+
+scroll				Se está desplazando una barra de desplazamiento												Evento de 																													interfaz de 																												usuario, 																													evento
+
+search				Algo está escrito en un campo de búsqueda													Evento
+
+seeked				Se ha terminado de saltar a una posición multimedia.										Evento
+
+seeking				Se inicia el salto a una posición multimedia												Evento
+
+select				El usuario selecciona un texto																Evento de 																													interfaz de 																												usuario, 																													evento
+
+show				Un elemento <menu> se muestra como un menú contextual										Evento
+
+stalled				El navegador está tratando de obtener datos de medios no disponibles						Evento
+
+storage				Se actualiza un área de almacenamiento web													Evento de 																												almacenamiento
+
+submit				Se envía un formulario																		Evento
+
+suspend				El navegador intencionalmente no obtiene datos de medios									Evento
+
+timeupdate			La posición de reproducción ha cambiado (el usuario se mueve a un punto diferente
+					en los medios)																				Evento
+
+toggle				La usuario abre o cierra el elemento <details>												Evento
+
+touchcancel			El toque se interrumpe																		Toque Evento
+
+touchend			Se quita un dedo de una pantalla táctil														Toque Evento
+
+touchmove			Se arrastra un dedo por la pantalla															Toque Evento
+
+touchstart			Un dedo se coloca en una pantalla táctil													Toque Evento
+
+transitionend		Se ha completado una transición de CSS														Evento de 																													transición
+
+unload				Se ha descargado una página																	Evento de 																													interfaz de 																												usuario, 																													evento
+
+volumechange		Se cambia el volumen de un medio (incluye silenciamiento)									Evento
+
+waiting				Un medio está en pausa pero se espera que se reanude (por ejemplo, almacenamiento en búfer)	Evento
+
+wheel				La rueda del mouse se desplaza hacia arriba o hacia abajo sobre un elemento.				Evento de 																													rueda
