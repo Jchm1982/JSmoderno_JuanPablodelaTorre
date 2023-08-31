@@ -1,0 +1,32 @@
+{
+  "clientes": [
+    {
+      "nombre": "jc1",
+      "email": "jchm@mail.com",
+      "telefono": "745823548",
+      "empresa": "JC",
+      "id": 27
+    },
+    {
+      "nombre": "gris",
+      "email": "gris@mail.com",
+      "telefono": "4750734574",
+      "empresa": "JC1",
+      "id": 28
+    },
+    {
+      "nombre": "Joy",
+      "email": "joy3@mail.com",
+      "telefono": "349163463",
+      "empresa": "jc3",
+      "id": 29
+    },
+    {
+      "nombre": "miguel",
+      "email": "miky@mail.com",
+      "telefono": "969575575",
+      "empresa": "Miky",
+      "id": 30
+    }
+  ]
+}
